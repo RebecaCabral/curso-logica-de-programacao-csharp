@@ -1,0 +1,23 @@
+using System;
+
+namespace _1019URI
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int N, CalculoDeHora, RestoDeHora, CalculoDeMinutos, RestoDeMinutos;
+
+            N = int.Parse(Console.ReadLine());
+
+            CalculoDeHora = N / 3600;
+            RestoDeHora = N % 3600;
+
+            CalculoDeMinutos = RestoDeHora / 60;
+            RestoDeMinutos = RestoDeHora % 60;
+
+            Console.WriteLine(CalculoDeHora + ":" + CalculoDeMinutos + ":" + RestoDeMinutos);
+
+        }
+    }
+}
